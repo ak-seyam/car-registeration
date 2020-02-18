@@ -36,7 +36,7 @@ class ScannerScreen extends StatelessWidget {
   Future scanner(context) async{
     await scan().then((value) =>  Navigator.push(context,
         MaterialPageRoute(
-            builder: (context) => RegistrationScreen(code: value)
+            builder: (context) => RegistrationScreen(code: value,serverURL: "http://192.168.1.3:5000/adduser",)
         )
     ));
   }

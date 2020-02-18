@@ -1,6 +1,6 @@
 import 'package:qrscan/qrscan.dart' as scanner;
 
 Future<String> scan() async{
-        String barCode = await scanner.scan();
-        return barCode;
+        String carCode = await scanner.scan();
+        return carCode;
 }
